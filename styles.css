@@ -1,0 +1,106 @@
+.nav {
+  height: 30px;
+  background: #654ea3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #eaafc8,
+    #654ea3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #eaafc8,
+    #654ea3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 10px 5px 5px 10px;
+  margin: 5px;
+  border-radius: 3px;
+  border-spacing: 3px;
+  display: inline-block;
+}
+
+.nav-links {
+  border-bottom: 2px solid #ff9933;
+  font-size: 20px;
+  padding: 2px;
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links:hover,
+.nav-links:active {
+  background-color: gray;
+  border-bottom: 2px solid #ffffff;
+  border-radius: 3px;
+}
+
+.mt-30{
+  margin-top: 30px;
+}
+
+.ml-10{
+  margin-left:10px;
+}
+.mr-15{
+  margin-right:15px;
+}
+
+.bg-orange{
+  background-color: #ff9933;
+}
+
+.bg-blue{
+  background-color: #ad33ff;
+}
+
+section{
+  margin-left: 10px !important;
+}
+
+.bar{
+  height:35px;
+  position: absolute;
+  top:0px;
+  left:30px;
+  width: 12px;
+  padding-bottom: 0px;
+  z-index: -1;
+}
+
+.bar-right {
+  left:60px;
+}
+
+.bar-left {
+  left:135px;
+}
+
+
+.brand {
+  color: white;
+  border-radius: 5px;
+  width:170px;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: #ad33ff solid 3px;
+  display: inline-block;
+}
+
+.nav > div {
+  display: inline-block;
+}
+
+iframe {
+  width: 98.8%;
+  height: 90%;
+  margin: 5px;
+  border: 0.3ch solid gray;
+  border-radius: 3px;
+}
+
+section{
+  margin: 5px;
+}

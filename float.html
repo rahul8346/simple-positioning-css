@@ -1,0 +1,213 @@
+<html lang="en">
+
+<head>
+    <title>CSS Positioning - Static</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #1f1f1f;
+            height: 1000px;
+            color: #bfbfbf;
+        }
+
+        h1 {
+            font-weight: normal;
+        }
+
+        em {
+            color: #dd740b;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px 10px 0px 0px;
+        }
+
+        .blueBox {
+            background: #627da0;
+            float: right;
+        }
+
+        .greenBox {
+            background: #5b8054;
+            float: right;
+        }
+
+        .bigbox{
+            float: left;
+            height: fit-content;
+            width: 20%;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .longbox{
+            width: 50% !important;
+        }
+
+        .bg-white{
+            border: white 1px solid;
+            font-size: 1.05em;
+        }
+
+        .container {
+            /*background: rgba(0,0,0,5);
+    width: 200px;
+    height: 200px;*/
+        }
+
+        .column-3{
+            width: 30%;
+            height: fit-content;
+            border: white 1px solid;
+            font-size: 1.05em;
+            float:left;
+            margin: 5px;
+            
+        }
+
+        .column{
+            /* width: 30%; */
+            /* height: fit-content; */
+            border: white 1px solid;
+            font-size: 1.05em;
+            /* float:left; */
+            margin: 5px;
+            /* clear: right; */
+        }
+
+        .column-2{
+            width: 46%;
+            height: fit-content;
+            border: white 1px solid;
+            font-size: 1.05em;
+            float:left;
+            margin: 5px;
+            
+        }
+
+        .mixed-column-right{
+            float: right;border: 1px solid slateblue;padding: 10px;margin:0 10px;
+            width: 30%;
+            margin-bottom: 20px;
+        }
+        .mixed-column-left{
+            border: 1px solid slateblue;padding: 10px;margin:10px;
+            width: 60%;
+           
+        }
+
+        section{
+            width: 100%;
+        }
+
+        .w100{
+            width: 100%;
+        }
+
+        .tcs{
+            clear: both;
+        }
+
+        .pt10{
+            padding-top: 10px !important;
+        }
+        p{
+            font-size: 1.05em;
+        }
+
+        div{
+            font-size: 1.05em;
+        }
+
+        .img{
+            float: left;
+            width: 450px;
+            margin-right: 1.05em;
+        }
+
+        ul {
+             list-style-type: inside;
+        }
+
+        ul.b {
+  list-style-position: inside;
+  list-style-type: square;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+    </style>
+</head>
+
+<body>
+    <nav>
+
+    </nav>
+    <div style="margin-left: 10px;">
+
+    
+
+    <div>
+        <h3 class="pt10">Calla Lily</h3>
+        <img class="img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/White_and_yellow_flower.JPG/220px-White_and_yellow_flower.JPG" alt="">
+        <p>Zantedeschia aethiopica is a rhizomatous herbaceous perennial plant, evergreen where rainfall and temperatures are adequate, deciduous where there is a dry season. Its preferred habitat is in streams and ponds or on the banks. It grows to 0.6–1 m (2.0–3.3 ft) tall, with large clumps of broad, arrow shaped dark green leaves up to 45 cm (18 in) long. The inflorescences are large and are produced in spring, summer and autumn, with a pure white spathe up to 25 cm (9.8 in) and a yellow spadix up to 90 mm (3 1⁄2 in) long.[2] The spadix produces a faint, sweet fragrance.[3]
+            Zantedeschia aethiopica contains calcium oxalate, and ingestion of the raw plant may cause a severe burning sensation and swelling of lips, tongue, and throat; stomach pain and diarrhea may occur.
+        </p>
+        <p>
+            A number of cultivars have been selected as ornamental plants:
+            <ul class="b">
+                <li>
+                    'Crowborough' is a more cold tolerant cultivar growing to 90 cm (35 in) tall, suited to cool climates, such as Ireland or Britain and the north-western United States.    
+                </li>
+                <li>
+                    'Green Goddess' has green stripes on the spathes which allow the flowers to last much longer than the original white form. 'Green Goddess' also has a more opened and wider spathe and has the tendency to develop curvy fringes at the edge of the spathe than the original white form. The first generation hybrid of 'Green Goddess' and the original white form have a light green underside on the spathe, allowing the flower to last longer than the original white form, but no green stripes on the top side.<br/> <br/>The New Zealand National Pest Plant Accord proscribes the cultivation, sale, and distribution of 'Green Goddess'.
+                </li>
+            </ul>
+        </p>
+        <p>
+            Plants are mainly multicellular organisms, predominantly photosynthetic eukaryotes of the kingdom Plantae. Historically, plants were treated as one of two kingdoms including all living things that were not animals, and all algae and fungi were treated as plants. However, all current definitions of Plantae exclude the fungi and some algae, as well as the prokaryotes (the archaea and bacteria). By one definition, plants form the clade Viridiplantae (Latin name for "green plants"), a group that includes the flowering plants, conifers and other gymnosperms, ferns and their allies, hornworts, liverworts, mosses, and the green algae, but excludes the red and brown algae.
+        </p>
+    </div>
+   <div >
+        <h3 class="tcs pt10">Three Column Section</h3>
+        <div class="column-3">The primary cause of monsoons lies in different warming trends over land and sea, though other factors may be involved. Seasonal changes in temperature are large over land but small over ocean waters, and monsoons blow from atmospheric heat sinks (that is, cold regions with high atmospheric pressure) toward heat sources (warm regions characterized by low atmospheric pressure). </div>
+        <div class="column-3">The primary cause of monsoons lies in different warming trends over land and sea, though other factors may be involved. Seasonal changes in temperature are large over land but small over ocean waters, and monsoons blow from atmospheric heat sinks (that is, cold regions with high atmospheric pressure) toward heat sources (warm regions characterized by low atmospheric pressure). </div>
+        <div class="column-3">The primary cause of monsoons lies in different warming trends over land and sea, though other factors may be involved. Seasonal changes in temperature are large over land but small over ocean waters, and monsoons blow from atmospheric heat sinks (that is, cold regions with high atmospheric pressure) toward heat sources (warm regions characterized by low atmospheric pressure). </div>
+    </div>
+    
+   <div >
+            <h3 class="tcs pt10">Two Column Section</h3>
+            <div class="column-2">The primary cause of monsoons lies in different warming trends over land and sea, though other factors may be involved. Seasonal changes in temperature are large over land but small over ocean waters, and monsoons blow from atmospheric heat sinks (that is, cold regions with high atmospheric pressure) toward heat sources (warm regions characterized by low atmospheric pressure). </div>
+            <div class="column-2">The primary cause of monsoons lies in different warming trends over land and sea, though other factors may be involved. Seasonal changes in temperature are large over land but small over ocean waters, and monsoons blow from atmospheric heat sinks (that is, cold regions with high atmospheric pressure) toward heat sources (warm regions characterized by low atmospheric pressure). </div>
+    </div> 
+    <div>
+        <h3 class="tcs pt10">Mixed Column Layout</h3>
+        <div class="mixed-column-right" >
+            Zantedeschia aethiopica is a rhizomatous herbaceous perennial plant, evergreen where rainfall and temperatures are adequate, deciduous where there is a dry season. Its preferred habitat is in streams and ponds or on the banks. It grows to 0.6–1 m (2.0–3.3 ft) tall, with large clumps of broad, arrow shaped dark green leaves up to 45 cm (18 in) long. The inflorescences are large and are produced in spring, summer and autumn, with a pure white spathe up to 25 cm (9.8 in) and a yellow spadix up to 90 mm (3 1⁄2 in) long.[2] The spadix produces a faint, sweet fragrance.
+            <br/>
+            <br/>
+            The spadix produces a faint, sweet fragrance.It is!
+            Zantedeschia aethiopica contains calcium oxalate, and ingestion of the raw plant may cause a severe burning sensation and swelling of lips, tongue, and throat
+        </div>
+        <div class="mixed-column-left">
+            Zantedeschia aethiopica is a rhizomatous herbaceous perennial plant, evergreen where rainfall and temperatures are adequate, deciduous where there is a dry season. Its preferred habitat is in streams and ponds or on the banks. It grows to 0.6–1 m (2.0–3.3 ft) tall, with large clumps of broad, arrow shaped dark green leaves up to 45 cm (18 in) long. The inflorescences are large and are produced in spring, summer and autumn, with a pure white spathe up to 25 cm (9.8 in) and a yellow spadix up to 90 mm (3 1⁄2 in) long.[2] The spadix produces a faint, sweet fragrance.
+        </div>
+        <div class="mixed-column-left">
+            Zantedeschia aethiopica is a rhizomatous herbaceous perennial plant, evergreen where rainfall and temperatures are adequate, deciduous where there is a dry season. Its preferred habitat is in streams and ponds or on the banks. It grows to 0.6–1 m (2.0–3.3 ft) tall, with large clumps of broad, arrow shaped dark green leaves up to 45 cm (18 in) long. The inflorescences are large and are produced in spring, summer and autumn, with a pure white spathe up to 25 cm (9.8 in) and a yellow spadix up to 90 mm (3 1⁄2 in) long.[2] The spadix produces a faint, sweet fragrance.
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
+
+

@@ -1,0 +1,77 @@
+<html lang="en">
+    <head>
+        <title>CSS Relative Positioning</title>
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+        <script src="script.js"></script>
+        <title>CSS Positioning</title>
+        <meta charset="utf-8">
+
+        <style> 
+        body {
+    background-color: #1f1f1f;
+    height: 1000px;
+    color: #bfbfbf;
+}
+
+h1 {
+    font-weight: normal;   
+}
+
+em {
+    color: #dd740b; 
+    font-size: 1.5rem;  
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+
+.blueBox {
+    background: blue;
+    position: relative;
+    bottom: 20px;
+    left: 92px;
+}
+
+.greenBox {
+    background: #5b8054;  
+}
+.voiletBox{
+    background-color:violet;
+}
+
+.container {
+   background: rgba(0,0,0,.4);
+   border: 2px white solid;
+   width: 200px;
+   height: 220px;
+   position: relative;
+   margin-top: 30px;
+}
+        
+        </style>
+    </head>
+    <body>
+        <nav>
+
+        </nav>
+        <section>
+        <div class="container">
+            <div class="box blueBox"></div> 
+            <div class="box voiletBox"></div> 
+        </div>
+        <div class="box greenBox"></div> 
+
+        <h1>Understanding CSS Positioning</h1>
+        <p><em>Relative positioning</em> sets the position of an element relative to its original position.  The element's original width and height is retained in document flow and other elements behave as if it was in its original position.</p>
+        <p style="padding-top: 15px;color: blue;background-color: whitesmoke;width: 30%;text-align: center;">
+            Blue Box has moved out of it's container!
+        </p>
+    </section>
+    </body>
+
+</html>

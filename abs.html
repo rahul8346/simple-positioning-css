@@ -1,0 +1,81 @@
+<head>
+    <title>CSS Absolute Positioning</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+    <style>
+        body {
+            background-color: #1f1f1f;
+            height: 2000px;
+            color: #bfbfbf;
+        }
+
+        h1 {
+            font-weight: normal;
+        }
+
+        em {
+            color: #dd740b;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            top: 50px;
+            left: 50px;
+        }
+
+        .blueBox {
+            background: blue;
+            position: absolute;
+        }
+
+        .greenBox {
+            background: #5b8054;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, .4);
+            border: 1px solid white;
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            margin-top: 370px;
+        }
+        em{
+        font-size: 1.5rem;
+      }
+    </style>
+</head>
+
+<body>
+    <nav>
+
+    </nav>
+    <section>
+
+        <div class="container">
+            <div class="box blueBox"></div>
+        </div>
+         
+            <div class="box" style="background-color: whitesmoke;color:blue;text-align: center;">
+            <p style="padding-top: 15px;">
+                Blue Box was here earlier!!!
+            </p>
+        </div>
+        <div class="box greenBox"></div>
+
+        <h1>Understanding CSS Positioning</h1>
+        <p><em>Absolute positioning</em> takes an element out of document flow, meaning the browser acts as if the
+            element
+            has no width and height, and the other elements on the page move up as if it was never there. The position
+            of
+            the element is then fixed relative to the top level container, or the closest parent with a set positioning.
+        </p>
+
+    </section>
+
+</body>
+
+</html>
+<script src="script.js"></script>

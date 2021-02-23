@@ -1,0 +1,75 @@
+<html lang="en">
+
+<head>
+    <title>CSS Positioning</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+    <meta charset="utf-8" />
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background-color: #1f1f1f;
+            height: 1000px;
+            color: #bfbfbf;
+        }
+
+        h1 {
+            font-weight: normal;
+        }
+
+        em {
+            color: #dd740b;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+            margin-right: 10px;
+            background: blue;
+        }
+
+        .blueBox {
+             margin: 0 auto;   
+        }
+
+.container{
+            position: absolute;
+            top:50%;
+            margin-top: -50px;
+            left: 0;
+            width: 100%;
+}
+
+        .greenBox {
+            background: #5b8054;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+
+    </nav>
+    <section>
+        <div class="container">
+            <div class="box blueBox"></div>
+        </div>
+        <h1>Understanding CSS Positioning</h1>
+        <p>One of the most commonly asked questions is how to <em>center elements</em> since there is no option to float
+            center. But by thinking carefully about how elements behave, we can use positioning to achieve the same
+            result.</p>
+
+            <p style="padding-top: 15px;color: blue;background-color: whitesmoke;width: 30%;text-align: center;">
+                Blue Box is centered using margin and position!
+            </p>
+    </section>
+
+
+</body>
+
+</html>
